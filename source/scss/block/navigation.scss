@@ -1,0 +1,39 @@
+.navigation {
+  display: block;
+
+  @media (min-width: $mobile-size-land) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__list {
+
+    @media (min-width: $mobile-size-land) {
+      display: flex;
+    }
+
+
+  }
+
+  &__item:not(:first-child) {
+    @media (min-width: $mobile-size-land) {
+      margin-left: 5rem;
+    }
+  }
+
+  &__link {
+    color: $primary-font-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  border-bottom: 4px solid $tertiary-color;
+
+
+}

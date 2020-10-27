@@ -1,0 +1,16 @@
+.header {
+
+  margin-top: 2rem;
+
+  &__bg {
+    display: none;
+
+    @media (min-width: $mobile-size-land) {
+      display: block;
+      background-image: url('../img/uzor-top.png');
+      background-repeat: repeat-x;
+      height: 76px;
+    }
+  }
+
+}

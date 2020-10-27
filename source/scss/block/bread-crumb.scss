@@ -1,0 +1,25 @@
+.bread-crumb {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+  &__list {
+    color: #6c757d;
+    font-weight: lighter;
+  }
+
+
+  & svg {
+    color: rgba(78, 85, 91, 0.4);
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  &__item {
+    display: inline;
+    padding-right: 0.5rem;
+
+    & a {
+      color: $primary-color;
+    }
+  }
+}
