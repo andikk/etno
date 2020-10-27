@@ -1,8 +1,14 @@
 .hero {
+
   position: relative;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 4px solid $tertiary-color;
+  z-index: 20;
+  margin-left: -15px;
+  margin-right: -15px;
+  @media (min-width: $mobile-size-land) {
+    padding-top: 2rem;
+    margin: 0;
+  }
+
 
   &__logo {
     position: absolute;
@@ -55,7 +61,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    margin-bottom: 3rem;
+    padding-bottom: 2rem;
     text-align: center;
     color: white;
 
@@ -65,7 +71,7 @@
       padding-left: 3rem;
       padding-right: 3rem;
       text-align: right;
-      margin-bottom: 4rem;
+
     }
   }
 

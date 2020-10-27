@@ -17,61 +17,160 @@
   <div class="header__bg"></div>
   <div class="container">
     <navigation class="navigation">
-      <ul class="navigation__list navigation__list--left">
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Главная</a>
-        </li>
 
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">О проекте</a>
-        </li>
+      <button class="navigation__toggler js-menu-btn">
+        <span class="navigation__toggler-bar1"></span>
+        <span class="navigation__toggler-bar2"></span>
+        <span class="navigation__toggler-bar3"></span>
+      </button>
 
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Видео</a>
-        </li>
-      </ul>
+      <div class="navigation__list-wrapper">
+        <ul class="navigation__list navigation__list--left">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Главная</a>
+          </li>
 
-      <ul class="navigation__list navigation__list--right">
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Карта</a>
-        </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">О проекте</a>
+          </li>
 
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Каталог</a>
-        </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Видео</a>
+          </li>
+        </ul>
 
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Контакты</a>
-        </li>
-      </ul>
+        <ul class="navigation__list navigation__list--right">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Карта</a>
+          </li>
+
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Каталог</a>
+          </li>
+
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
 
     </navigation>
+
+    <section class="hero">
+      <div class="hero__logo">
+        <img class="hero__logo-img" src="img/logo.png" alt="Логотип">
+      </div>
+
+      <img class="hero__image" src="img/hero.jpg" alt="Виртуальный музей Этнодеревня СКФО: маршрут побратимства">
+
+      <div class="hero__info">
+        <h2 class="hero__subtitle">Виртуальный музей</h2>
+        <h1 class="hero__title">“Этнодеревня СКФО: маршрут побратимства”</h1>
+      </div>
+
+    </section>
   </div>
 
 </header>
 
 
 <main class="container">
+  <section class="content">
 
-  <section class="hero">
-    <div class="hero__logo">
-      <img class="hero__logo-img" src="img/logo.png" alt="Логотип">
-    </div>
+    <section class="video section">
+      <h2 class="section__title">Видео фестивалей</h2>
 
-    <img class="hero__image" src="img/hero.jpg" alt="Виртуальный музей Этнодеревня СКФО: маршрут побратимства">
+      <div class="video__row">
 
-    <div class="hero__info">
-      <h2 class="hero__subtitle">Виртуальный музей</h2>
-      <h1 class="hero__title">“Этнодеревня СКФО: маршрут побратимства”</h1>
-    </div>
+        <div class="video__item-container">
+          <div class="video__item-wrapper">
+            <iframe class="video__item" src="https://www.youtube.com/embed/YZqRyRJkl3M" frameborder="0" allowfullscreen=""></iframe>
+          </div>
+        </div>
+
+        <div class="video__item-container">
+          <div class="video__item-wrapper">
+            <iframe class="video__item" src="https://www.youtube.com/embed/YZqRyRJkl3M" frameborder="0" allowfullscreen=""></iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="video__action">
+        <button class="button">Все видео</button>
+      </div>
+    </section>
+
+    <section class="map section">
+      <h2 class="section__title">Карта</h2>
+      <div class="section__row map__wrapper">
+        <div class="section__block">
+
+          <div class="section__text-wrapper">
+            <div class="section__text-inner section__text-inner--right">
+              <h3 class="section__subtitle section__subtitle--text-right">Интерактивная карта «Этнодеревни СКФО»</h3>
+              <p class="section__text section__text--text-right">На карте отмечены места нахождения этнодеревень. <br>Найти  нужный объект легко!</p>
+            </div>
+
+            <div class="section__action--right">
+              <button class="button">Перейти на карту</button>
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+
+        <div class="section__block">
+          <div class="map__map-container"></div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="catalog section">
+      <h2 class="section__title">Каталог</h2>
+      <div class="section__row ">
+
+        <div class="section__block">
+          <div class="map__map-container"></div>
+        </div>
+
+        <div class="section__block">
+
+          <div class="section__text-wrapper">
+            <div class="section__text-inner section__text-inner--left">
+              <h3 class="section__subtitle section__subtitle--text-left">Интерактивная карта «Этнодеревни СКФО»</h3>
+              <p class="section__text section__text--text-left">На карте отмечены места нахождения этнодеревень. <br>Найти  нужный объект легко!</p>
+            </div>
+
+            <div class="section__action section__action--left">
+              <button class="button">Перейти на карту</button>
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+
+
+
+      </div>
+    </section>
+
 
   </section>
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+
+
+
+
 
 
 
@@ -83,6 +182,6 @@
 </footer>
 
 
-
+<script src="js/bundle.js"></script>
 </body>
 </html>

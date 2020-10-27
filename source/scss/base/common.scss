@@ -134,3 +134,16 @@ input[type="radio"].visually-hidden {
     word-break:break-all;
   }
 }
+
+.title {
+  color: $primary-font-color;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+
+}

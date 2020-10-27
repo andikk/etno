@@ -1,39 +1,112 @@
 .navigation {
   display: block;
 
+  background-color: $tertiary-color;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 5px 15px;
+
   @media (min-width: $mobile-size-land) {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 5rem;
+    background-color: transparent;
+    margin: 0;
+    border-bottom: 4px solid $tertiary-color;
   }
 
-  &__list {
+  &__list-wrapper {
 
+    max-height: 0;
+    overflow-y: hidden;
+    margin-bottom: 0;
+    transition: all 0.7s;
+
+
+    @media (min-width: $mobile-size-land) {
+      display:flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0;
+      margin-top: 0;
+      max-height: 1000px;
+      margin-bottom: 0;
+    }
+
+    &.opened {
+      margin-top: 1rem;
+      max-height: 1000px;
+      margin-bottom: 6px;
+    }
+  }
+
+
+  &__list {
     @media (min-width: $mobile-size-land) {
       display: flex;
     }
 
-
   }
 
   &__item:not(:first-child) {
+
+    padding-top: 0.5rem;
+
     @media (min-width: $mobile-size-land) {
       margin-left: 5rem;
+      padding-top: 0;
     }
   }
 
   &__link {
-    color: $primary-font-color;
+    color: white;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: bold;
+
+    @media (min-width: $mobile-size-land) {
+      color: $primary-font-color;
+    }
+
   }
 
-  border-bottom: 4px solid $tertiary-color;
+
+
+  &__toggler {
+    display: block;
+
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    z-index: 10;
+
+    &-bar1,
+    &-bar2,
+    &-bar3 {
+      display: block;
+      width: 35px;
+      height: 5px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    .js-change &-bar1 {
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .js-change &-bar2 {
+      opacity: 0;
+    }
+
+    .js-change &-bar3 {
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    @media (min-width: $mobile-size-land) {
+      display: none;
+    }
+
+  }
 
 
 }
