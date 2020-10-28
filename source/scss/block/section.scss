@@ -1,11 +1,16 @@
 .section {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  border-bottom: 4px solid $tertiary-color;
+
+
   &__title {
     color: $primary-font-color;
     text-transform: uppercase;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   &__subtitle {
@@ -43,9 +48,13 @@
   }
 
   &__block {
+
+    margin-bottom: 2rem;
+
     @media (min-width: $mobile-size-land) {
       flex: 0 0 50%;
       max-width: 50%;
+      margin-bottom: 0;
 
       &:first-child {
         padding-right: 15px;
@@ -70,27 +79,50 @@
     flex-direction: column;
     justify-content: center;
 
-    &__text-inner--right {
-      padding: 1rem 1rem 1rem 4rem;
+    margin-bottom: 2rem;
+
+    &--right {
+      padding: 2rem 2rem 2rem 4rem;
     }
 
+    &--left {
+      padding: 4rem 2rem 2rem 2rem;
+    }
 
   }
 
   &__action {
     &--right {
-      text-align: right;
+      align-items: flex-end;
+      padding-right: 1rem;
+
+      @media (min-width: $mobile-size-land) {
+        padding-right: 0;
+      }
     }
 
     &--left {
-      text-align: left;
+      align-items: flex-start;
+
+      padding-left: 1rem;
+
+      @media (min-width: $mobile-size-land) {
+        padding-left: 0;
+      }
+
+
     }
 
     height: 20%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end;
+
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
   }
 
 

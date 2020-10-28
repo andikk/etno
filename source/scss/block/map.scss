@@ -1,6 +1,9 @@
 .map {
   &__map-container {
-    min-height: 450px;
+    min-height: 250px;
+    @media (min-width: $desktop-large-size) {
+      min-height: 450px;
+    }
     background-image: url('../img/map.png');
     background-size: cover;
     background-position: center;
@@ -11,9 +14,10 @@
     background-color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    min-height: 400px;
+
+    @media (min-width: $desktop-large-size) {
+      min-height: 450px;
+    }
   }
-
-
 
 }

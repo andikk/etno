@@ -36,8 +36,6 @@
       width: 21rem;
       height: 20rem;
     }
-
-
   }
 
   &__image {
@@ -65,8 +63,6 @@
     text-align: center;
     color: white;
 
-
-
     @media (min-width: $mobile-size-land) {
       padding-left: 3rem;
       padding-right: 3rem;
@@ -87,7 +83,7 @@
   &__title {
     font-size: 0.9rem;
     @media (min-width: $mobile-size-land) {
-      font-size: 4rem;
+      font-size: 3.6rem;
     }
 
     text-shadow: 5px 5px 4px #000000;
