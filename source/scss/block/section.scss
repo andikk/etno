@@ -3,7 +3,6 @@
   padding-bottom: 5rem;
   border-bottom: 4px solid $tertiary-color;
 
-
   &__title {
     color: $primary-font-color;
     text-transform: uppercase;
@@ -86,7 +85,7 @@
     }
 
     &--left {
-      padding: 4rem 2rem 2rem 2rem;
+      padding: 4rem 2rem 4rem 2rem;
     }
 
   }
@@ -109,8 +108,6 @@
       @media (min-width: $mobile-size-land) {
         padding-left: 0;
       }
-
-
     }
 
     height: 20%;
@@ -124,6 +121,4 @@
     width: 100%;
     height: auto;
   }
-
-
 }

@@ -12,6 +12,10 @@
     margin-bottom: 1rem;
   }
 
+  & a {
+    color: white;
+  }
+
 
   &__block {
     @media (min-width: $mobile-size-land) {

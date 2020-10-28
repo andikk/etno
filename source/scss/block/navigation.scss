@@ -20,7 +20,6 @@
     margin-bottom: 0;
     transition: all 0.7s;
 
-
     @media (min-width: $mobile-size-land) {
       display:flex;
       justify-content: space-between;
@@ -43,7 +42,6 @@
     @media (min-width: $mobile-size-land) {
       display: flex;
     }
-
   }
 
   &__item:not(:first-child) {
@@ -57,18 +55,33 @@
   }
 
   &__link {
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1.25rem;
-    font-weight: bold;
 
-    @media (min-width: $mobile-size-land) {
-      color: $primary-font-color;
+    &,
+    &:link,
+    &:visited {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1.25rem;
+      font-weight: bold;
+
+      @media (min-width: $mobile-size-land) {
+        color: $primary-font-color;
+      }
     }
 
-  }
+    &:hover {
+      @media (min-width: $mobile-size-land) {
+        color: $tertiary-color;
+      }
+    }
 
+    &:active,
+    &:focus,
+    &--active {
+      color: $primary-color!important;
+    }
+  }
 
 
   &__toggler {
@@ -107,6 +120,4 @@
     }
 
   }
-
-
 }
