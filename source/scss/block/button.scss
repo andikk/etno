@@ -1,11 +1,62 @@
 .button {
-  background-color: $primary-color;
-  border-radius: 4px;
-  color: white;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  border: none;
-  padding: 0.5rem 1.3rem;
-  cursor: pointer;
-  text-decoration: none;
+  &,
+  &:link,
+  &:visited {
+    background-color: $primary-color;
+    border-radius: 4px;
+    color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    border: none;
+    padding: 0.5rem 1.3rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .2s;
+    position: relative;
+    display: inline-block;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 .5rem 1rem rgba(black, 0.2);
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    background-color: $primary-color;
+  }
+}
+
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
