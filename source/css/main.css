@@ -556,11 +556,13 @@ input[type="radio"].visually-hidden {
       margin-top: 1rem;
       max-height: 1000px;
       margin-bottom: 6px; }
-  @media (min-width: 576px) {
-    .navigation__list {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
+  .navigation__list {
+    padding-bottom: 0.5rem !important; }
+    @media (min-width: 576px) {
+      .navigation__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
   .navigation__item:not(:first-child) {
     padding-top: 0.5rem; }
     @media (min-width: 576px) {

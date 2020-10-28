@@ -20,6 +20,7 @@
     margin-bottom: 0;
     transition: all 0.7s;
 
+
     @media (min-width: $mobile-size-land) {
       display:flex;
       justify-content: space-between;
@@ -39,6 +40,7 @@
 
 
   &__list {
+    padding-bottom: 0.5rem!important;
     @media (min-width: $mobile-size-land) {
       display: flex;
     }
