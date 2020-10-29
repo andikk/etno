@@ -508,9 +508,43 @@ input[type="radio"].visually-hidden {
     .container {
       max-width: 1470px; } }
 
+.header__logo {
+  display: none; }
+
 @media (min-width: 576px) {
   .header {
-    margin-top: 2rem; } }
+    margin-top: 2rem; }
+    .header__logo {
+      display: block;
+      width: 100%;
+      height: auto; }
+    .header__row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .header__logo-container {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 17%;
+              flex: 0 0 17%;
+      max-width: 17%; }
+    .header__navigation-container {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 83%;
+              flex: 0 0 83%;
+      max-width: 83%;
+      padding-top: 2rem;
+      padding-left: 3rem; } }
+
+@media (min-width: 1200px) {
+  .header__logo-container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 22%;
+            flex: 0 0 22%;
+    max-width: 22%; }
+  .header__navigation-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; } }
 
 .header__bg {
   display: none; }
@@ -519,7 +553,18 @@ input[type="radio"].visually-hidden {
       display: block;
       background-image: url("../img/uzor-top.png");
       background-repeat: repeat-x;
-      height: 76px; } }
+      height: 76px; }
+      .header__bg--inner {
+        display: none; } }
+  @media (min-width: 1200px) {
+    .header__bg--inner {
+      display: block;
+      -webkit-box-sizing: content-box;
+              box-sizing: content-box;
+      border-bottom: 4px solid #42A9CA;
+      margin-top: 1rem;
+      padding-bottom: 1rem;
+      margin-bottom: 5rem; } }
 
 .navigation {
   display: block;
@@ -529,10 +574,16 @@ input[type="radio"].visually-hidden {
   padding: 5px 15px; }
   @media (min-width: 576px) {
     .navigation {
-      padding: 1rem 5rem;
+      padding: 1rem 0;
       background-color: transparent;
       margin: 0;
-      border-bottom: 4px solid #42A9CA; } }
+      border-bottom: 4px solid #42A9CA; }
+      .navigation.navigation--inner {
+        padding-left: 0;
+        padding-right: 0; } }
+  @media (min-width: 1080px) {
+    .navigation {
+      padding: 1rem 5rem; } }
   .navigation__list-wrapper {
     max-height: 0;
     overflow-y: hidden;
@@ -551,7 +602,11 @@ input[type="radio"].visually-hidden {
         padding: 0;
         margin-top: 0;
         max-height: 1000px;
-        margin-bottom: 0; } }
+        margin-bottom: 0; }
+        .navigation__list-wrapper.navigation__list-wrapper--inner {
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; } }
     .navigation__list-wrapper.opened {
       margin-top: 1rem;
       max-height: 1000px;
@@ -563,18 +618,22 @@ input[type="radio"].visually-hidden {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; } }
+    @media (min-width: 576px) {
+      .navigation__list.navigation__list--inner:last-child {
+        margin-left: 4.4rem; } }
   .navigation__item:not(:first-child) {
     padding-top: 0.5rem; }
     @media (min-width: 576px) {
       .navigation__item:not(:first-child) {
-        margin-left: 5rem;
+        margin-left: 4.4rem;
         padding-top: 0; } }
   .navigation__link, .navigation__link:link, .navigation__link:visited {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1.25rem;
-    font-weight: bold; }
+    font-weight: bold;
+    white-space: nowrap; }
     @media (min-width: 576px) {
       .navigation__link, .navigation__link:link, .navigation__link:visited {
         color: #236C83; } }
@@ -640,8 +699,8 @@ input[type="radio"].visually-hidden {
     @media (min-width: 576px) {
       .hero__logo {
         top: 0;
-        width: 12em;
-        height: 11rem; } }
+        width: 15em;
+        height: 14rem; } }
     @media (min-width: 768px) {
       .hero__logo {
         top: 0;
@@ -866,7 +925,7 @@ input[type="radio"].visually-hidden {
             transform: translate(0); } }
 
 .section {
-  padding-top: 3rem;
+  padding-top: 4rem;
   padding-bottom: 5rem;
   border-bottom: 4px solid #42A9CA; }
   .section__title {

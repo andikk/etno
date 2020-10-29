@@ -1,7 +1,45 @@
 .header {
 
+  &__logo {
+    display: none;
+  }
+
   @media (min-width: $mobile-size-land) {
     margin-top: 2rem;
+
+    &__logo {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    &__row {
+      display: flex;
+    }
+
+    &__logo-container {
+      flex: 0 0 17%;
+      max-width: 17%;
+    }
+
+    &__navigation-container {
+      flex: 0 0 83%;
+      max-width: 83%;
+      padding-top: 2rem;
+      padding-left: 3rem;
+    }
+  }
+
+  @media (min-width: $desktop-size) {
+
+    &__logo-container {
+      flex: 0 0 22%;
+      max-width: 22%;
+    }
+
+    &__navigation-container {
+      flex: 1;
+    }
   }
 
   &__bg {
@@ -12,6 +50,23 @@
       background-image: url('../img/uzor-top.png');
       background-repeat: repeat-x;
       height: 76px;
+      &--inner {
+        display: none;
+      }
     }
+
+    @media (min-width:$desktop-size) {
+      &--inner {
+        display: block;
+        box-sizing: content-box;
+        border-bottom: 4px solid $tertiary-color;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 5rem;
+
+      }
+    }
+
+
   }
 }
