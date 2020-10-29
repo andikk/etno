@@ -1,0 +1,66 @@
+.social {
+  padding-top: 3rem;
+  @media (min-width: $mobile-size-land) {
+    padding-top: 0;
+  }
+
+  &__row {
+    @media (min-width: $mobile-size-land) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__block {
+
+    color: white;
+    font-size: 1.5rem;
+    @media (min-width: $mobile-size-land) {
+      font-size: 2.2rem;
+    }
+
+    &:first-child {
+      text-align: center;
+    }
+
+    &:last-child {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 2rem;
+      padding-right: 2rem;
+
+      @media (min-width: $mobile-size-land) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+      }
+    }
+
+    @media (min-width: $mobile-size-land) {
+      flex: 0 0 50%;
+      max-width: 50%;
+
+      &:first-child {
+        background-color: white;
+        text-align: right;
+      }
+
+    }
+  }
+  @media (min-width: $mobile-size-land) {
+    &__link {
+      & img {
+        transition: all .4s;
+        border-radius: 4px;
+      }
+
+
+      &:hover img {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+
+
+}

@@ -1,5 +1,7 @@
 .navigation {
   display: block;
+  //position: relative;
+  //z-index: 100;
 
   background-color: $tertiary-color;
   margin-left: -15px;
@@ -11,6 +13,7 @@
     background-color: transparent;
     margin: 0;
     border-bottom: 4px solid $tertiary-color;
+
     &.navigation--inner {
       padding-left: 0;
       padding-right: 0;

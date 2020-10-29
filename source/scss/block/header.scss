@@ -20,6 +20,7 @@
     &__logo-container {
       flex: 0 0 17%;
       max-width: 17%;
+
     }
 
     &__navigation-container {
@@ -50,6 +51,7 @@
       background-image: url('../img/uzor-top.png');
       background-repeat: repeat-x;
       height: 76px;
+
       &--inner {
         display: none;
       }
@@ -63,10 +65,7 @@
         margin-top: 1rem;
         padding-bottom: 1rem;
         margin-bottom: 5rem;
-
       }
     }
-
-
   }
 }

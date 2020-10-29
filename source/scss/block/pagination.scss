@@ -1,0 +1,30 @@
+.pagination {
+  margin-top: 2rem;
+  margin-left: 2rem;
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: $primary-color;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    text-decoration: none;
+    font-size: 1.25rem;
+  }
+
+  &__link:hover {
+    background-color: $secondary-color;
+  }
+
+  &__link--active {
+    background-color: $primary-color;
+    color: #ffffff;
+  }
+}
