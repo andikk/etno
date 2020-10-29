@@ -9,7 +9,7 @@
   justify-content: space-between;
 
   @media (min-width: $desktop-large-size) {
-    min-height: 2906px;
+   // min-height: 2906px;
   }
 
   &--inner {
@@ -20,7 +20,7 @@
     }
 
     @media (min-width: $desktop-large-size) {
-      min-height: 3800px;
+    //  min-height: 3800px;
       margin-top: 0;
     }
   }
@@ -62,6 +62,8 @@
       background-image: url('../img/uzor-white.png');
       height: 377px;
     }
+
+
   }
 
 
