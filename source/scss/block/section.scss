@@ -2,52 +2,6 @@
   padding-top: 4rem;
   padding-bottom: 4rem;
   border-bottom: 4px solid $tertiary-color;
-  position: relative;
-
-  &__link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
-    z-index: 10;
-  }
-
-  &__image {
-    width: 100%;
-    height: auto;
-    transition: all .3s;
-  }
-
-  &__image-wrapper {
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  &--catalog {
-    padding-top: 0;
-    padding-bottom: 0;
-    &:not(:first-child) {
-      padding-top: 4rem;
-    }
-
-    @media (min-width: $mobile-size-land) {
-      padding-bottom: 4rem;
-    }
-  }
-
-  &--catalog:hover .section__image {
-    transform: scale(1.1);
-  }
-
-  &--catalog:hover .section__subtitle {
-    text-decoration: underline;
-  }
 
   &__title {
     color: $primary-font-color;
@@ -72,15 +26,6 @@
         text-align: left;
       }
     }
-
-    &--catalog {
-      color: $primary-color;
-      font-size: 2.4rem;
-      line-height: 3rem;
-      margin-bottom: 1rem;
-      padding-top: 0.4rem;
-    }
-
   }
 
   &__text {
@@ -97,10 +42,6 @@
         padding-right: 2rem;
       }
     }
-    &--catalog {
-      color: black;
-      font-weight: 500;
-    }
   }
 
   &__row {
@@ -112,9 +53,7 @@
   }
 
   &__block {
-
     margin-bottom: 2rem;
-
     @media (min-width: $mobile-size-land) {
       flex: 0 0 50%;
       max-width: 50%;
@@ -152,14 +91,6 @@
       padding: 4rem 2rem 4rem 2rem;
     }
 
-    &--catalog {
-      background-color: transparent;
-      display: block;
-      padding-left: 15px;
-      padding-right: 15px;
-      padding-top: 0;
-      padding-bottom: 0;
-    }
   }
 
   &__action {
@@ -187,9 +118,4 @@
       }
     }
   }
-}
-
-.content--inner .section {
-  border: none;
-
 }
