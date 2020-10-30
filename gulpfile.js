@@ -93,6 +93,8 @@ gulp.task("copy", function (done) {
 
 gulp.task("js", function() {
   return gulp.src([
+    "source/js/bundle/photoswipe.min.js",
+    "source/js/bundle/photoswipe-ui-default.min.js",
     "source/js/bundle/custom.js",
   ])
     .pipe(concat("bundle.js"))
