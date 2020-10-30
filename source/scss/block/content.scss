@@ -8,19 +8,15 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media (min-width: $desktop-large-size) {
-   // min-height: 2906px;
-  }
 
   &--inner {
     padding-top: 0.5rem;
     @media (min-width: $mobile-size-land) {
       margin-top: 2rem;
-      padding-top: 2rem;
+      padding-top: 0;
     }
 
     @media (min-width: $desktop-large-size) {
-    //  min-height: 3800px;
       margin-top: 0;
     }
   }
@@ -63,9 +59,6 @@
       height: 377px;
     }
 
-
   }
-
-
 
 }

@@ -835,7 +835,7 @@ input[type="radio"].visually-hidden {
     @media (min-width: 576px) {
       .content--inner {
         margin-top: 2rem;
-        padding-top: 2rem; } }
+        padding-top: 0; } }
     @media (min-width: 1400px) {
       .content--inner {
         margin-top: 0; } }
@@ -954,7 +954,16 @@ input[type="radio"].visually-hidden {
     transition: all .3s; }
   .section__image-wrapper {
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%; }
   .section--catalog {
     padding-top: 0;
     padding-bottom: 0; }
@@ -966,6 +975,8 @@ input[type="radio"].visually-hidden {
   .section--catalog:hover .section__image {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
+  .section--catalog:hover .section__subtitle {
+    text-decoration: underline; }
   .section__title {
     color: #236C83;
     text-transform: uppercase;
@@ -986,7 +997,8 @@ input[type="radio"].visually-hidden {
       color: #832323;
       font-size: 2.4rem;
       line-height: 3rem;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      padding-top: 0.4rem; }
   .section__text {
     color: white;
     font-size: 1.3rem; }
@@ -1082,6 +1094,9 @@ input[type="radio"].visually-hidden {
       @media (min-width: 576px) {
         .section__action--left {
           padding-left: 0; } }
+
+.content--inner .section {
+  border: none; }
 
 .map__map-container {
   min-height: 250px;
@@ -1278,10 +1293,11 @@ input[type="radio"].visually-hidden {
 .detail__title {
   color: #832323;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 2rem;
   text-align: center; }
-  .detail__title--sm {
-    font-size: 3rem; }
+  @media (min-width: 1200px) {
+    .detail__title {
+      font-size: 3rem; } }
 
 .detail__foto {
   width: 100%;
@@ -1328,8 +1344,7 @@ input[type="radio"].visually-hidden {
 .video {
   padding-top: 4rem;
   text-align: center;
-  border-bottom: 4px solid #42A9CA;
-  border-top: 4px solid #42A9CA; }
+  border-bottom: 4px solid #42A9CA; }
   @media (min-width: 576px) {
     .video__row {
       display: -webkit-box;
@@ -1444,6 +1459,53 @@ input[type="radio"].visually-hidden {
         -ms-flex: 0 0 80%;
             flex: 0 0 80%;
     max-width: 70%; }
+
+.marked-list {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  .marked-list__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 3rem; }
+  .marked-list__block-icon {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 15%;
+            flex: 0 0 15%;
+    max-width: 15%;
+    padding-left: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .marked-list__block-icon img {
+      width: 100%;
+      height: auto; }
+  .marked-list__block {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 85%;
+            flex: 0 0 85%;
+    max-width: 85%;
+    padding-left: 4rem;
+    padding-right: 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
 
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 /*

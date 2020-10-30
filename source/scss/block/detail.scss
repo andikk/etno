@@ -42,13 +42,11 @@
   &__title {
     color: $primary-color;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 2rem;
     text-align: center;
-
-    &--sm {
+    @media (min-width: $desktop-size) {
       font-size: 3rem;
     }
-
   }
 
   &__foto {
