@@ -1280,6 +1280,43 @@ input[type="radio"].visually-hidden {
   height: auto;
   margin-bottom: 2rem; }
 
+.gallery {
+  padding-top: 3rem; }
+  @media (min-width: 576px) {
+    .gallery__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  .gallery__caption {
+    text-align: center; }
+  .gallery img {
+    width: 95%;
+    height: auto; }
+  .gallery__item {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%; }
+    @media (min-width: 768px) {
+      .gallery__item {
+        margin: 0;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+        max-width: 50%; } }
+    @media (min-width: 1400px) {
+      .gallery__item {
+        margin: 0;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 25%;
+                flex: 0 0 25%;
+        max-width: 25%; } }
+
 .video {
   padding-top: 4rem;
   text-align: center;
