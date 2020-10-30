@@ -1179,6 +1179,8 @@ input[type="radio"].visually-hidden {
 
 .social {
   padding-top: 3rem; }
+  .social__text {
+    text-shadow: 1px 1px 0px #000000; }
   @media (min-width: 576px) {
     .social {
       padding-top: 0; } }
@@ -1230,6 +1232,90 @@ input[type="radio"].visually-hidden {
     .social__link:hover img {
       -webkit-transform: scale(1.2);
               transform: scale(1.2); } }
+
+@media (min-width: 576px) {
+  .detail__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 2rem; } }
+
+@media (min-width: 576px) {
+  .detail__block {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 0; }
+    .detail__block--title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .detail__block--description {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+
+.detail__text {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  .detail__text p {
+    margin-bottom: 1rem; }
+
+.detail__title {
+  color: #832323;
+  text-transform: uppercase;
+  font-size: 4rem; }
+
+.detail__foto {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem; }
+
+.gallery {
+  padding-top: 3rem; }
+  @media (min-width: 576px) {
+    .gallery__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  .gallery__caption {
+    text-align: center; }
+  .gallery img {
+    width: 95%;
+    height: auto; }
+  .gallery__item {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%; }
+    @media (min-width: 768px) {
+      .gallery__item {
+        margin: 0;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+        max-width: 50%; } }
+    @media (min-width: 1400px) {
+      .gallery__item {
+        margin: 0;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 25%;
+                flex: 0 0 25%;
+        max-width: 25%; } }
 
 .video {
   padding-top: 4rem;

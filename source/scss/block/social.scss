@@ -1,5 +1,9 @@
 .social {
   padding-top: 3rem;
+  &__text {
+    text-shadow: 1px 1px 0px #000000;
+  }
+
   @media (min-width: $mobile-size-land) {
     padding-top: 0;
   }

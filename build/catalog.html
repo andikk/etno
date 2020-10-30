@@ -6,139 +6,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="css/main.css" rel="stylesheet" type="text/css">
   <script src="js/single/svgxuse.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
-        rel="stylesheet">
+
   <title>Виртуальный музей “Этнодеревня СКФО: маршрут побратимства”</title>
 </head>
 
 <body>
 
 <header class="header">
-  <div class="header__bg"></div>
+
   <div class="container">
-    <navigation class="navigation">
 
-      <button class="navigation__toggler js-menu-btn">
-        <span class="navigation__toggler-bar1"></span>
-        <span class="navigation__toggler-bar2"></span>
-        <span class="navigation__toggler-bar3"></span>
-      </button>
+    <div class="header__row">
 
-      <div class="navigation__list-wrapper">
-        <ul class="navigation__list navigation__list--left">
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--active" href="#">Главная</a>
-          </li>
-
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">О проекте</a>
-          </li>
-
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Видео</a>
-          </li>
-        </ul>
-
-        <ul class="navigation__list navigation__list--right">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Карта</a>
-          </li>
-
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог</a>
-          </li>
-
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Контакты</a>
-          </li>
-        </ul>
+      <div class="header__logo-container">
+        <a href="/"> <img class="header__logo" src="img/logo.svg" alt="Логотип"/></a>
       </div>
 
+      <div class="header__navigation-container">
+        <navigation class="navigation navigation--inner">
 
-    </navigation>
+          <button class="navigation__toggler js-menu-btn">
+            <span class="navigation__toggler-bar1"></span>
+            <span class="navigation__toggler-bar2"></span>
+            <span class="navigation__toggler-bar3"></span>
+          </button>
 
-    <section class="hero">
-      <div class="hero__logo">
-        <img class="hero__logo-img" src="img/logo.png" alt="Логотип">
+          <div class="navigation__list-wrapper navigation__list-wrapper--inner">
+            <ul class="navigation__list navigation__list--inner">
+              <li class="navigation__item">
+                <a class="navigation__link" href="index.html">Главная</a>
+              </li>
+
+              <li class="navigation__item">
+                <a class="navigation__link" href="about.html">О проекте</a>
+              </li>
+
+              <li class="navigation__item">
+                <a class="navigation__link" href="video.html">Видео</a>
+              </li>
+            </ul>
+
+            <ul class="navigation__list navigation__list--inner">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Карта</a>
+              </li>
+
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--active" href="catalog.html">Каталог</a>
+              </li>
+
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+
+        </navigation>
+
+        <div class="header__bg header__bg--inner"></div>
       </div>
 
-      <img class="hero__image" src="img/hero.jpg" alt="Виртуальный музей Этнодеревня СКФО: маршрут побратимства">
+    </div>
 
-      <div class="hero__info">
-        <h2 class="hero__subtitle">Виртуальный музей</h2>
-        <h1 class="hero__title">“Этнодеревня СКФО: маршрут побратимства”</h1>
-      </div>
-
-    </section>
   </div>
 
 </header>
 
 
 <main class="container">
-  <section class="content">
-
+  <section class="content content--inner">
     <div>
-      <section class="video section">
-        <h2 class="section__title">Видео фестивалей</h2>
-
-        <div class="video__row">
-
-          <div class="video__item-container">
-            <div class="video__item-wrapper">
-              <iframe class="video__item" src="https://www.youtube.com/embed/UGVG_Io1L7A" frameborder="0" allowfullscreen=""></iframe>
-            </div>
-          </div>
-
-          <div class="video__item-container">
-            <div class="video__item-wrapper">
-              <iframe class="video__item" src="https://www.youtube.com/embed/YZqRyRJkl3M" frameborder="0" allowfullscreen=""></iframe>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="video__action">
-          <a href="#" class="button button--animated">Все видео</a>
-        </div>
-      </section>
-
-      <section class="map section">
-        <h2 class="section__title">Карта</h2>
-        <div class="section__row map__wrapper">
-          <div class="section__block">
-
-            <div class="section__text-wrapper">
-              <div class="section__text-inner section__text-inner--right">
-                <h3 class="section__subtitle section__subtitle--text-right">Интерактивная карта «Этнодеревни СКФО»</h3>
-                <p class="section__text section__text--text-right">На карте отмечены места нахождения этнодеревень. <br>Найти  нужный объект легко!</p>
-              </div>
-
-              <div class="section__action section__action--right">
-                <a href="#" class="button">Перейти на карту</a>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="section__block">
-            <div class="map__map-container"></div>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="catalog section">
-        <h2 class="section__title">Каталог</h2>
+      <section class="section section--catalog">
+        <a class="section__link" href="#"></a>
         <div class="section__row ">
 
           <div class="section__block">
-
-            <div class="composition">
-              <img src="img/catalog1.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-              <img src="img/catalog2.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-              <img src="img/catalog3.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+            <div class="section__image-wrapper">
+              <img src="img/catalog1.jpg" alt="Photo 1" class="section__image">
             </div>
 
           </div>
@@ -146,13 +91,16 @@
           <div class="section__block">
 
             <div class="section__text-wrapper">
-              <div class="section__text-inner section__text-inner--left">
-                <h3 class="section__subtitle section__subtitle--text-left">В каталоге приведена подробная информация об этнодеревнях.</h3>
-                <p class="section__text section__text--text-left">Изучайте каталог этнодеревней.</p>
-              </div>
-
-              <div class="section__action section__action--left">
-                <a href="#" class="button">Перейти в каталог</a>
+              <div class="section__text-inner section__text-inner--left section__text-inner--catalog">
+                <h3 class="section__subtitle section__subtitle--text-left section__subtitle--catalog">«Казачье подворье» <br>(ст. Боргустанская, Ставропольский край)</h3>
+                <p class="section__text section__text--text-left section__text--catalog">«Казачье подворье» представляет
+                  единый этнографический комплекс, состоящий из нескольких объектов.
+                  «Казачье подворье» представляет
+                  единый этнографический комплекс, состоящий из нескольких объектов.
+                  «Казачье подворье» представляет
+                  единый этнографический комплекс, состоящий из нескольких объектов, из которых основной это хата,
+                  построенная более 100 лет назад боргустанским казаком Павленко. На территории комплекса расположены:
+                  «Хата», «Дворовые пристройки», летняя кухня «Летница», «Сторожевая башня» и «Казачий редут»</p>
               </div>
 
             </div>
@@ -162,9 +110,161 @@
         </div>
       </section>
 
-      <div class="content__uzor"></div>
-    </div>
+      <section class="section section--catalog">
+        <a class="section__link" href="#"></a>
+        <div class="section__row ">
+          <div class="section__block">
 
+            <div class="section__text-wrapper">
+              <div class="section__text-inner section__text-inner--right section__text-inner--catalog">
+                <h3 class="section__subtitle section__subtitle--text-right section__subtitle--catalog">«Казачье подворье»</h3>
+                <p class="section__text section__text--text-right section__text--catalog">«Казачье подворье» представляет
+                  единый этнографический комплекс, состоящий из нескольких объектов.
+                  единый этнографический комплекс, состоящий из нескольких объектов, из которых основной это хата,
+                  построенная более 100 лет назад боргустанским казаком Павленко. На территории комплекса расположены:
+                  «Хата», «Дворовые пристройки», летняя кухня «Летница», «Сторожевая башня» и «Казачий редут»</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="section__block">
+            <div class="section__image-wrapper">
+              <img src="img/catalog1.jpg" alt="Photo 1" class="section__image">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section section--catalog">
+        <a class="section__link" href="#"></a>
+        <div class="section__row ">
+
+          <div class="section__block">
+            <div class="section__image-wrapper">
+              <img src="img/catalog1.jpg" alt="Photo 1" class="section__image">
+            </div>
+
+          </div>
+
+          <div class="section__block">
+
+            <div class="section__text-wrapper">
+              <div class="section__text-inner section__text-inner--left section__text-inner--catalog">
+                <h3 class="section__subtitle section__subtitle--text-left section__subtitle--catalog">«Казачье подворье» <br>(ст. Боргустанская, Ставропольский край)</h3>
+                <p class="section__text section__text--text-left section__text--catalog">«Казачье подворье» представляет
+                  единый этнографический комплекс, состоящий из нескольких объектов.
+                  «Казачье подворье» представляет
+                  единый этнографический комплекс, состоящий из нескольких объектов.
+                  «Казачье подворье» представляет
+                  единый этнографический комплекс, состоящий из нескольких объектов, из которых основной это хата,
+                  построенная более 100 лет назад боргустанским казаком Павленко. На территории комплекса расположены:
+                  «Хата», «Дворовые пристройки», летняя кухня «Летница», «Сторожевая башня» и «Казачий редут»</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section section--catalog">
+        <a class="section__link" href="#"></a>
+        <div class="section__row ">
+          <div class="section__block">
+
+            <div class="section__text-wrapper">
+              <div class="section__text-inner section__text-inner--right section__text-inner--catalog">
+                <h3 class="section__subtitle section__subtitle--text-right section__subtitle--catalog">«Казачье подворье» <br>(ст. Боргустанская, Ставропольский край)</h3>
+                <p class="section__text section__text--text-right section__text--catalog">«Казачье подворье» представляет
+                  единый этнографический комплекс, состоящий из нескольких объектов.
+                  единый этнографический комплекс, состоящий из нескольких объектов, из которых основной это хата,
+                  построенная более 100 лет назад боргустанским казаком Павленко. На территории комплекса расположены:
+                  «Хата», «Дворовые пристройки», летняя кухня «Летница», «Сторожевая башня» и «Казачий редут»</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="section__block">
+            <div class="section__image-wrapper">
+              <img src="img/catalog1.jpg" alt="Photo 1" class="section__image">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section section--catalog">
+        <a class="section__link" href="#"></a>
+        <div class="section__row ">
+
+          <div class="section__block">
+            <div class="section__image-wrapper">
+              <img src="img/catalog1.jpg" alt="Photo 1" class="section__image">
+            </div>
+
+          </div>
+
+          <div class="section__block">
+
+            <div class="section__text-wrapper">
+              <div class="section__text-inner section__text-inner--left section__text-inner--catalog">
+                <h3 class="section__subtitle section__subtitle--text-left section__subtitle--catalog">«Казачье подворье» <br>(ст. Боргустанская, Ставропольский край)</h3>
+                <p class="section__text section__text--text-left section__text--catalog">«Казачье подворье» представляет
+                  единый этнографический комплекс, состоящий из нескольких объектов.
+                  «Казачье подворье» представляет
+                  единый этнографический комплекс, состоящий из нескольких объектов.
+                  «Казачье подворье» представляет
+                  единый этнографический комплекс, состоящий из нескольких объектов, из которых основной это хата,
+                  построенная более 100 лет назад боргустанским казаком Павленко. На территории комплекса расположены:
+                  «Хата», «Дворовые пристройки», летняя кухня «Летница», «Сторожевая башня» и «Казачий редут»</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <nav class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a class="pagination__link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="pagination__item"><a class="pagination__link pagination__link--active" href="#">1</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="content__uzor"></div>
+
+      <div class="social">
+        <div class="social__row">
+          <div class="social__block">
+            <a class="social__link" href="https://vk.com/etnomarshrut"><img src="img/shtrih.jpg" alt="Штрих-код со ссылкой на социальные сети"></a>
+          </div>
+
+          <div class="social__block">
+            <p class="social__text">Больше информации об этнодеревнях России и ближайшего зарубежья в социальных сетях</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
     <section class="footer">
       <div class="footer__block footer__block--left">
@@ -186,16 +286,12 @@
       </div>
 
 
-    </div>
+      </div>
 
+
+    </section>
 
   </section>
-
-
-
-
-
-
 </main>
 
 

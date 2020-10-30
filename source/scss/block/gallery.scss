@@ -1,0 +1,39 @@
+.gallery {
+  padding-top: 3rem;
+  &__list {
+    @media (min-width: $mobile-size-land) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__caption {
+    text-align: center;
+  }
+
+  & img {
+    width: 95%;
+    height: auto;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    @media (min-width: $tablet-size-port) {
+      margin: 0;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    @media (min-width: $desktop-large-size) {
+      margin: 0;
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  }
+
+}
