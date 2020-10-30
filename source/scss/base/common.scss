@@ -9,15 +9,18 @@
   color: white;
 }
 
-
 ul[class] {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-p, h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
   margin: 0;
+}
+
+p {
+  margin-top: 0;
 }
 
 html {
@@ -38,8 +41,6 @@ html {
   @media (min-width: $desktop-large-size) {
     font-size: 90%;
   }
-
-
 }
 
 body {
@@ -135,15 +136,6 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.title {
-  color: $primary-font-color;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
-
-.subtitle {
-
+.catalog {
+  border-bottom: none!important;
 }

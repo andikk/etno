@@ -11,7 +11,6 @@
 @import "block/button";
 @import "block/section";
 @import "block/map";
-@import "block/catalog";
 @import "block/composition";
 @import "block/bread-crumb";
 @import "block/pagination";
@@ -20,3 +19,6 @@
 @import "block/gallery";
 @import "block/video";
 @import "block/footer";
+
+@import "vendor/main";
+@import "vendor/default-skin/default-skin";

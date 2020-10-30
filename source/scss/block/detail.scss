@@ -1,11 +1,11 @@
 .detail {
-
   &__row {
 
     @media (min-width: $mobile-size-land) {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
+      padding-top: 3rem;
     }
   }
 
@@ -33,6 +33,7 @@
     font-size: 1.2rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    font-weight: 500;
     & p {
       margin-bottom: 1rem;
     }
@@ -42,6 +43,7 @@
     color: $primary-color;
     text-transform: uppercase;
     font-size: 4rem;
+    text-align: center;
 
   }
 
