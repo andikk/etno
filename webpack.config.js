@@ -4,7 +4,7 @@ module.exports = {
   entry: `./source/js/react/index.js`,
   output: {
     filename: `map.js`,
-    path: path.join(__dirname, `source`)
+    path: path.join(__dirname, `source/js/single/`)
   },
   devServer: {
     contentBase: path.join(__dirname, `source`),
