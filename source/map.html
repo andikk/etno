@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/react-leaflet-markercluster/dist/styles.min.css"/>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
   <script src="js/single/svgxuse.min.js"></script>
-
 
   <title>Виртуальный музей “Этнодеревня СКФО: маршрут побратимства”</title>
 </head>
@@ -78,8 +80,7 @@
 <main class="container">
   <section class="content content--inner">
     <div>
-a
-      <div id="root"></div>
+      <div id="root" class="map-container" ></div>
 
       <div class="content__uzor"></div>
 
@@ -126,8 +127,7 @@ a
 </main>
 
 
-
-<script src="js/single/map.js"></script>
 <script src="js/bundle.js"></script>
+<script src="js/single/map.js"></script>
 </body>
 </html>

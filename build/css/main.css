@@ -1059,6 +1059,18 @@ input[type="radio"].visually-hidden {
     .map__wrapper {
       min-height: 450px; } }
 
+.leaflet-container {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; }
+
+.map-container {
+  min-height: 500px;
+  position: relative; }
+
 .composition {
   position: relative;
   padding-left: 1rem; }
