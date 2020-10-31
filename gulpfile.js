@@ -37,7 +37,7 @@ gulp.task("server", function () {
   gulp.watch("source/scss/**/*.scss", gulp.series("css"));
   gulp.watch("source/js/bundle/*.js", gulp.series("js"));
   gulp.watch("source/*.html").on("change", server.reload);
-  gulp.watch("source/js/bundle/*.js").on("change", server.reload);
+  gulp.watch("source/*.js").on("change", server.reload);
 });
 
 gulp.task("clean", function (done) {
@@ -81,8 +81,8 @@ gulp.task("copy", function (done) {
     "source/img/**",
     "source/js/**",
     "source/*.html",
+    "source/*.js",
     "source/css/*.*"
-
   ], {
       base: "source"
     })
