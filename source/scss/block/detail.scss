@@ -49,6 +49,15 @@
     }
   }
 
+  &__category {
+    color: rgba(191, 52, 52, 0.6);
+    font-size: 1rem;
+    @media (min-width: $desktop-size) {
+      font-size: 1.5rem;
+    }
+  }
+
+
   &__foto {
     width: 100%;
     height: auto;

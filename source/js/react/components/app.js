@@ -1,24 +1,16 @@
-import React, {useState} from "react";
-import { Map, TileLayer, Marker, Popup} from 'react-leaflet'
+import React, {useState, useEffect} from "react";
+import { Map, TileLayer, Marker, Popup, Tooltip} from 'react-leaflet'
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import Modal from 'react-modal';
+import useAxios from "axios-hooks";
 
 const App = () => {
   const [modalIsOpen,setIsOpen] = useState(false);
-  const objects = [
-    {
-      id: "1",
-      name: "Объект 1",
-      lat: 45.080572,
-      lon: 41.953576
-    },
-    {
-      id: "2",
-      name: "Объект 2",
-      lat: 45.180572,
-      lon: 41.953576
-    },
-  ];
+
+  const [{ data: objects, loading, error }] = useAxios(
+    'http://localhost:3000/list.json'
+  );
+
 
   const closeModal = () => {
     setIsOpen(false);
@@ -27,6 +19,9 @@ const App = () => {
   const openModal =  () => {
     setIsOpen(true);
   };
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error!</p>;
 
   return (
     <>
@@ -39,9 +34,10 @@ const App = () => {
           {objects.map((object) => (
             <Marker position={[object.lat, object.lon]}>
               <Popup>
-                <h3>{object.name}</h3>
-                <button className="button" onClick={openModal}>Подробнее</button>
+                <img className="map__img" src={object.img} alt={object.name}/>
+                <button className="button button--sm" onClick={openModal}>Подробнее</button>
               </Popup>
+              <Tooltip direction='bottom' offset={[-15.5, 23]} permanent  interactive={true}>{object.name}</Tooltip>
             </Marker>
           ))}
         </MarkerClusterGroup>
@@ -52,6 +48,7 @@ const App = () => {
         onRequestClose={closeModal}
       >
         <h1>Test</h1>
+        <button className='button-close' onClick={closeModal}>&times;</button>
       </Modal>
     </>
 

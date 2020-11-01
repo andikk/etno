@@ -46,6 +46,11 @@
     transition: all .4s;
     background-color: $primary-color;
   }
+
+  &--sm {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+  }
 }
 
 
