@@ -1,10 +1,11 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import { Map, TileLayer, Marker, Popup, Tooltip} from 'react-leaflet'
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import Modal from 'react-modal';
 import useAxios from "axios-hooks";
 import { css } from "@emotion/core";
-import ClipLoader from "react-spinners/ClipLoader";
+import Spinner from "react-spinners/BeatLoader";
+import Detail from "./detail";
 
 const override = css`
   display: block;
@@ -22,7 +23,6 @@ const App = () => {
     '/list.json'
   );
 
-
   const closeModal = () => {
     setIsOpen(false);
   };
@@ -32,13 +32,13 @@ const App = () => {
   };
 
 
-  if (loading) return <ClipLoader
+  if (loading) return <Spinner
     css={override}
-    size={150}
+    size={20}
     color={"#832323"}
     loading={loading}
   />;
-  if (error) return ;
+  if (error) return <p>Ошибка загрузки</p>;
 
   return (
     <>
@@ -61,11 +61,10 @@ const App = () => {
       </Map>
       <Modal
         isOpen={modalIsOpen}
-        contentLabel="Example Modal"
-        onRequestClose={closeModal}
+          onRequestClose={closeModal}
       >
-        <h1>Test</h1>
-        <button className='button-close' onClick={closeModal}>&times;</button>
+          <button className='button-close' onClick={closeModal}>&times;</button>
+          <Detail/>
       </Modal>
     </>
 
