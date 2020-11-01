@@ -3,12 +3,23 @@ import { Map, TileLayer, Marker, Popup, Tooltip} from 'react-leaflet'
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import Modal from 'react-modal';
 import useAxios from "axios-hooks";
+import { css } from "@emotion/core";
+import ClipLoader from "react-spinners/ClipLoader";
+
+const override = css`
+  display: block;
+  border-color: 832323;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+`;
 
 const App = () => {
   const [modalIsOpen,setIsOpen] = useState(false);
 
   const [{ data: objects, loading, error }] = useAxios(
-    'http://localhost:3000/list.json'
+    '/list.json'
   );
 
 
@@ -20,8 +31,14 @@ const App = () => {
     setIsOpen(true);
   };
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error!</p>;
+
+  if (loading) return <ClipLoader
+    css={override}
+    size={150}
+    color={"#832323"}
+    loading={loading}
+  />;
+  if (error) return ;
 
   return (
     <>

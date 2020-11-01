@@ -915,6 +915,10 @@ input[type="radio"].visually-hidden {
   transition: all .4s;
   background-color: #832323; }
 
+.button--sm {
+  font-size: 1rem;
+  padding: 0.4rem 1rem; }
+
 @-webkit-keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -1059,6 +1063,10 @@ input[type="radio"].visually-hidden {
     .map__wrapper {
       min-height: 450px; } }
 
+.map__img {
+  width: 100%;
+  height: auto; }
+
 .leaflet-container {
   position: absolute;
   top: 0;
@@ -1070,21 +1078,15 @@ input[type="radio"].visually-hidden {
 .map-container {
   position: relative;
   min-height: 300px; }
+  @media (min-width: 768px) {
+    .map-container {
+      min-height: 400px; } }
+  @media (min-width: 1080px) {
+    .map-container {
+      min-height: 600px; } }
   @media (min-width: 1200px) {
     .map-container {
       min-height: 800px; } }
-
-.ReactModal__Overlay.ReactModal__Overlay--after-open {
-  z-index: 1; }
-
-.ReactModal__Overlay.ReactModal__Overlay--after-open {
-  background-color: rgba(115, 114, 114, 0.7) !important; }
-
-.ReactModal__Body--open {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  height: 100%; }
 
 .composition {
   position: relative;
@@ -1124,22 +1126,6 @@ input[type="radio"].visually-hidden {
   .composition:hover .composition__photo:not(:hover) {
     -webkit-transform: scale(0.95);
             transform: scale(0.95); }
-
-.bread-crumb {
-  padding-bottom: 1rem;
-  padding-top: 1rem; }
-  .bread-crumb__list {
-    color: #6c757d;
-    font-weight: lighter; }
-  .bread-crumb svg {
-    color: rgba(78, 85, 91, 0.4);
-    margin-left: 0.5rem;
-    font-size: 0.8rem; }
-  .bread-crumb__item {
-    display: inline;
-    padding-right: 0.5rem; }
-    .bread-crumb__item a {
-      color: #832323; }
 
 .pagination {
   margin-top: 2rem;
@@ -1268,6 +1254,13 @@ input[type="radio"].visually-hidden {
   @media (min-width: 1200px) {
     .detail__title {
       font-size: 3rem; } }
+
+.detail__category {
+  color: rgba(191, 52, 52, 0.6);
+  font-size: 1rem; }
+  @media (min-width: 1200px) {
+    .detail__category {
+      font-size: 1.5rem; } }
 
 .detail__foto {
   width: 100%;
@@ -1565,6 +1558,32 @@ input[type="radio"].visually-hidden {
   color: black;
   font-weight: 500;
   font-size: 1.3rem; }
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+  z-index: 1; }
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+  background-color: rgba(115, 114, 114, 0.7) !important; }
+
+.ReactModal__Body--open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%; }
+
+.button-close {
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  position: fixed;
+  right: 47px;
+  top: 31px;
+  outline: none;
+  z-index: 10;
+  cursor: pointer;
+  color: #6c757d; }
+  .button-close:hover {
+    color: black; }
 
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 /*
