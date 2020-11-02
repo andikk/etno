@@ -6,6 +6,7 @@ import useAxios from "axios-hooks";
 import { css } from "@emotion/core";
 import Spinner from "react-spinners/BeatLoader";
 import Detail from "./detail";
+import {SITE_URL} from "../helper";
 
 const override = css`
   display: block;
@@ -20,7 +21,7 @@ const App = () => {
   const [modalIsOpen,setIsOpen] = useState(false);
 
   const [{ data: objects, loading, error }] = useAxios(
-    '/list.json'
+    `${SITE_URL}list.json`
   );
 
   const closeModal = () => {

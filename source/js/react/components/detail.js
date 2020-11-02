@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import useAxios from "axios-hooks";
 import { css } from "@emotion/core";
 import Spinner from "react-spinners/BeatLoader";
+import {SITE_URL} from "../helper";
 
 const override = css`
   display: block;
@@ -14,7 +15,7 @@ const override = css`
 
 const Detail = () => {
   const [{ data: detail, loading, error }] = useAxios(
-    '/detail.json'
+    `${SITE_URL}detail.json`
   );
 
   if (loading) return <Spinner
