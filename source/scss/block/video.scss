@@ -3,6 +3,10 @@
   padding-top: 4rem;
   text-align: center;
 
+  //@media (min-width: $mobile-size-land) {
+  //  padding-top: 6rem;
+  //}
+
   &__row {
     @media (min-width: $mobile-size-land) {
       display: flex;
