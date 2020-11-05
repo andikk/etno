@@ -763,25 +763,13 @@ input[type="radio"].visually-hidden {
   .hero__subtitle {
     text-transform: uppercase;
     text-shadow: 5px 5px 4px #000000;
-    font-size: 1.3rem;
-    -webkit-animation-name: moveInRight;
-            animation-name: moveInRight;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out; }
+    font-size: 1.3rem; }
     @media (min-width: 576px) {
       .hero__subtitle {
         font-size: 3.3rem; } }
   .hero__title {
     font-size: 0.9rem;
-    text-shadow: 5px 5px 4px #000000;
-    -webkit-animation-name: moveInLeft;
-            animation-name: moveInLeft;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out; }
+    text-shadow: 5px 5px 4px #000000; }
     @media (min-width: 576px) {
       .hero__title {
         font-size: 3.6rem; } }
