@@ -4,13 +4,15 @@
     "name": "Объект 1",
     "lat": 45.080572,
     "lon": 41.953576,
-    "img": "img/catalog1.jpg"
+    "img": "img/catalog1.jpg",
+    "gallery": ["img/catalog1.jpg", "img/catalog1.jpg", "img/catalog1.jpg"]
   },
   {
     "id": "2",
     "name": "Объект 2",
     "lat": 45.180572,
     "lon": 41.953576,
-    "img": "img/catalog2.jpg"
+    "img": "img/catalog2.jpg",
+    "gallery": ["img/catalog2.jpg", "img/catalog2.jpg", "img/catalog2.jpg"]
   }
 ]

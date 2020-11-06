@@ -626,12 +626,12 @@ input[type="radio"].visually-hidden {
         display: flex; } }
     @media (min-width: 576px) {
       .navigation__list.navigation__list--inner:last-child {
-        margin-left: 4.4rem; } }
+        margin-left: 4rem; } }
   .navigation__item:not(:first-child) {
     padding-top: 0.5rem; }
     @media (min-width: 576px) {
       .navigation__item:not(:first-child) {
-        margin-left: 4.4rem;
+        margin-left: 4rem;
         padding-top: 0; } }
   .navigation__link, .navigation__link:link, .navigation__link:visited {
     color: white;
@@ -1534,7 +1534,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%; }
+  width: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
   @media (min-width: 576px) {
     .catalog-list__image-container {
       -webkit-box-flex: 0;
