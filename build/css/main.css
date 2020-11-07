@@ -1235,7 +1235,9 @@ input[type="radio"].visually-hidden {
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
     max-width: 50%;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-right: 15px;
+    padding-left: 15px; }
     .detail__block--title {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1572,6 +1574,14 @@ input[type="radio"].visually-hidden {
   color: black;
   font-weight: 500;
   font-size: 1.3rem; }
+
+.catalog-list__category {
+  display: block;
+  color: rgba(191, 52, 52, 0.6);
+  font-size: 1rem; }
+  @media (min-width: 1200px) {
+    .catalog-list__category {
+      font-size: 1.5rem; } }
 
 .ReactModal__Overlay.ReactModal__Overlay--after-open {
   z-index: 1; }
