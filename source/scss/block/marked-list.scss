@@ -1,6 +1,8 @@
 .marked-list {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  @media (min-width: $mobile-size-land) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 
   &__row {
     display: flex;
@@ -8,12 +10,16 @@
   }
 
   &__block-icon {
-    flex: 0 0 15%;
-    max-width: 15%;
-    padding-left: 3rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    display: none;
+
+    @media (min-width: $mobile-size-land) {
+      flex: 0 0 15%;
+      max-width: 15%;
+      padding-left: 3rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
 
     & img {
       width: 100%;
@@ -22,15 +28,17 @@
   }
 
   &__block {
-    flex: 0 0 85%;
-    max-width: 85%;
-    padding-left: 4rem;
-    padding-right: 2rem;
-    font-size: 1.8rem;
     font-weight: 500;
     display: flex;
     justify-content: center;
     flex-direction: column;
 
+    @media (min-width: $mobile-size-land) {
+      flex: 0 0 85%;
+      max-width: 85%;
+      font-size: 1.8rem;
+      padding-left: 4rem;
+      padding-right: 2rem;
+    }
   }
 }

@@ -19,17 +19,19 @@ const override = css`
 
 const App = () => {
   const [modalIsOpen,setIsOpen] = useState(false);
+  const [objectId, setObjectId] = useState(null);
 
   const [{ data: objects, loading, error }] = useAxios(
-    `${SITE_URL}list.json`
+    `${SITE_URL}/api?geoobject=all`
   );
 
   const closeModal = () => {
     setIsOpen(false);
   };
 
-  const openModal =  () => {
+  const openModal =  (id) => {
     setIsOpen(true);
+    setObjectId(id);
   };
 
 
@@ -52,8 +54,8 @@ const App = () => {
           {objects.map((object) => (
             <Marker position={[object.lat, object.lon]}>
               <Popup>
-                <img className="map__img" src={object.img} alt={object.name}/>
-                <button className="button button--sm" onClick={openModal}>Подробнее</button>
+                <img className="map__img" src={`${SITE_URL}/${object.img}`} alt={object.name}/>
+                <button className="button button--sm" onClick={() => openModal(object.id)}>Подробнее</button>
               </Popup>
               <Tooltip direction='bottom' offset={[-15.5, 23]} permanent  interactive={true}>{object.name}</Tooltip>
             </Marker>
@@ -62,10 +64,10 @@ const App = () => {
       </Map>
       <Modal
         isOpen={modalIsOpen}
-          onRequestClose={closeModal}
+        onRequestClose={closeModal}
       >
           <button className='button-close' onClick={closeModal}>&times;</button>
-          <Detail/>
+          <Detail objectId={objectId}/>
       </Modal>
     </>
 

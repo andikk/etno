@@ -1,18 +1,131 @@
 [
+
   {
-    "id": "1",
-    "name": "Объект 1",
-    "lat": 45.080572,
-    "lon": 41.953576,
-    "img": "img/catalog1.jpg",
-    "gallery": ["img/catalog1.jpg", "img/catalog1.jpg", "img/catalog1.jpg"]
-  },
-  {
-    "id": "2",
-    "name": "Объект 2",
-    "lat": 45.180572,
-    "lon": 41.953576,
-    "img": "img/catalog2.jpg",
-    "gallery": ["img/catalog2.jpg", "img/catalog2.jpg", "img/catalog2.jpg"]
+    "id": "94dbbc48-2046-11eb-9710-0050568c1ea7",
+    "name": "Крестьянское фермерское хозяйство «Бахча Пономарёвых»",
+    "lat": 45.078472,
+    "lon": 42.418651,
+    "img": "/export/sites/etno-village/.galleries/Foto/sq9aBYvmIs4.jpg"
   }
+,
+  {
+    "id": "03421a7c-2048-11eb-9710-0050568c1ea7",
+    "name": "Джейрахско-Ассинский государственный историко-архитектурный и природный музей-заповедник",
+    "lat": 42.800279,
+    "lon": 44.995231,
+    "img": "/export/sites/etno-village/.galleries/Foto/AtnBd0sdLAk.jpg"
+  }
+,
+  {
+    "id": "cd6551d0-204a-11eb-9710-0050568c1ea7",
+    "name": "Дом-усадьба М.Ю. Лермонтова",
+    "lat": 44.040011,
+    "lon": 43.077606,
+    "img": "/export/sites/etno-village/.galleries/Foto/aZg9i7IT9oM.jpg"
+  }
+,
+  {
+    "id": "75389d74-204c-11eb-9710-0050568c1ea7",
+    "name": "Этнографический комплекс «Кавказская Эллада»",
+    "lat": 44.425075,
+    "lon": 43.003023,
+    "img": "/export/sites/etno-village/.galleries/Foto/2i6fTsoPnEg.jpg"
+  }
+,
+  {
+    "id": "bcd9f310-204e-11eb-9710-0050568c1ea7",
+    "name": "Казачье подворье «Жар-птица»",
+    "lat": 44.018534,
+    "lon": 42.977682,
+    "img": "/export/sites/etno-village/.galleries/Foto/myi.jpg"
+  }
+,
+  {
+    "id": "21473d6b-2019-11eb-9710-0050568c1ea7",
+    "name": "Историко-этнографический музей «Донди-Юрт» ",
+    "lat": 43.141287,
+    "lon": 45.518032,
+    "img": "/export/sites/etno-village/.galleries/Foto/7cjIMIxisXI.jpg"
+  }
+,
+  {
+    "id": "460e6543-20da-11eb-9710-0050568c1ea7",
+    "name": "«Казачье подворье»",
+    "lat": 44.049184,
+    "lon": 42.515672,
+    "img": "/export/sites/etno-village/.galleries/Foto/cEEwe6heOdk.jpg"
+  }
+,
+  {
+    "id": "f67fcf6e-20db-11eb-9710-0050568c1ea7",
+    "name": "Карачаевское подворье. Медовые водопады",
+    "lat": 43.884680,
+    "lon": 42.588343,
+    "img": "/export/sites/etno-village/.galleries/Foto/uTDh1x1iYL4.jpg"
+  }
+,
+  {
+    "id": "fcb53545-20dc-11eb-9710-0050568c1ea7",
+    "name": "Куртатинское ущелье",
+    "lat": 42.877415,
+    "lon": 44.315001,
+    "img": "/export/sites/etno-village/.galleries/Foto/dTGV_zP83JY.jpg"
+  }
+,
+  {
+    "id": "52ec1a82-20e0-11eb-9710-0050568c1ea7",
+    "name": "Музей Русского самовара",
+    "lat": 45.324583,
+    "lon": 41.527580,
+    "img": "/export/sites/etno-village/.galleries/Foto/aOXTdkDm6ws.jpg"
+  }
+,
+  {
+    "id": "018a3b9c-20e8-11eb-9710-0050568c1ea7",
+    "name": "Музей-усадьба художника Н.А. Ярошенко",
+    "lat": 43.892832,
+    "lon": 42.718557,
+    "img": "/export/sites/etno-village/.galleries/Foto/Fcf6A5bUiZw.jpg"
+  }
+,
+  {
+    "id": "52e9b2e7-20ec-11eb-9710-0050568c1ea7",
+    "name": "Туристско-рекреационный комплекс "Усадьба добра»",
+    "lat": 44.883949,
+    "lon": 42.131616,
+    "img": "/export/sites/etno-village/.galleries/Foto/iDqt9zcN6fs.jpg"
+  }
+,
+  {
+    "id": "94e44d2a-20ed-11eb-9710-0050568c1ea7",
+    "name": "Архитектурный комплекс “Цитадель Нарын-Кала”",
+    "lat": 42.052415,
+    "lon": 48.273837,
+    "img": "/export/sites/etno-village/.galleries/Foto/CNJ8xk9MXAI.jpg"
+  }
+,
+  {
+    "id": "75d42919-210a-11eb-9710-0050568c1ea7",
+    "name": "Усадьба иконы Владимирской Божьей матери",
+    "lat": 45.274746,
+    "lon": 41.989531,
+    "img": "/export/sites/etno-village/.galleries/Foto/Hkch4YjtNE0.jpg"
+  }
+,
+  {
+    "id": "c3294d71-210c-11eb-9710-0050568c1ea7",
+    "name": "Этнографическая деревня Шира-котар",
+    "lat": 43.187148,
+    "lon": 45.920224,
+    "img": "/export/sites/etno-village/.galleries/Foto/article35.jpg"
+  }
+,
+  {
+    "id": "6ad50a3b-210d-11eb-9710-0050568c1ea7",
+    "name": "Этнодеревня казаков-некрасовцев и молокан",
+    "lat": 44.797047,
+    "lon": 44.696863,
+    "img": "/export/sites/etno-village/.galleries/Foto/WM6-UWhiPfM.jpg"
+  }
+
 ]

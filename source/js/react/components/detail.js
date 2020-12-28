@@ -1,8 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 import useAxios from "axios-hooks";
 import { css } from "@emotion/core";
 import Spinner from "react-spinners/BeatLoader";
 import {SITE_URL} from "../helper";
+import AwesomeSlider from "react-awesome-slider";
 
 const override = css`
   display: block;
@@ -13,9 +14,9 @@ const override = css`
   transform: translate(-50%, -50%)
 `;
 
-const Detail = () => {
+const Detail = (props) => {
   const [{ data: detail, loading, error }] = useAxios(
-    `${SITE_URL}detail.json`
+    `http://etnomarshrut.ncfu.ru/api?geoobject=${props.objectId}`
   );
 
   if (loading) return <Spinner
@@ -29,6 +30,7 @@ const Detail = () => {
 
   return (
     <>
+
       <div className="detail__row">
         <div className="detail__block detail__block--title">
           <h2 className="detail__title detail__title--sm">{detail.title} <p className="detail__category">{detail.category}</p>
@@ -37,12 +39,19 @@ const Detail = () => {
 
         <div className="detail__block detail__block--description">
           <div className="detail__text" dangerouslySetInnerHTML={{__html: detail.pretext}}>
-
           </div>
         </div>
       </div>
 
-      <img className="detail__foto" src={detail.photo} width="1440" height="820" alt={detail.title}/>
+      <AwesomeSlider>
+        {detail.gallery.map((image) => {
+          return (
+            <div key={image}>
+              <img  style={{width: "100%", height: "auto"}} src={`${SITE_URL}/${image}`} width="1440" height="820" alt={detail.title}/>
+            </div>
+          )
+        })}
+      </AwesomeSlider>
       <div className="detail__text"  dangerouslySetInnerHTML={{__html: detail.description}}>
 
 
